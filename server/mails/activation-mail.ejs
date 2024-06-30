@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activate Your eLearning Account</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        .header h1 {
+            color: #4CAF50;
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .content {
+            padding: 20px 0;
+        }
+
+        .content p {
+            margin: 10px 0;
+        }
+
+        .activation-code {
+            display: block;
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin: 20px 0;
+            font-weight: bold;
+            font-size: 1.4em;
+            text-align: center;
+            border-radius: 5px;
+            color: #333;
+        }
+
+        .footer {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #eeeeee;
+        }
+
+        .footer p {
+            margin: 5px 0;
+        }
+
+        .footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Welcome to eLearning</h1>
+        </div>
+        <div class="content">
+            <p>Hello <%= user.name %>,</p>
+            <p>Thank you for registering with eLearning. To activate your account, please use the following activation code:</p>
+            <span class="activation-code"><%= user.activationCode %></span>
+            <p>Please enter this code on the activation page within the next 5 minutes.</p>
+            <p>If you did not register for an eLearning account, please ignore this email.</p>
+        </div>
+        <div class="footer">
+            <p>If you have any questions, please don't hesitate to contact us at <a href="mailto:jumaleabdi2@gmail.com">jumaleabdi2@gmail.com</a>.</p>
+        </div>
+    </div>
+</body>
+
+</html>
